@@ -308,23 +308,21 @@ task-manager-api/
 
 ### Key Components
 
-```bash
-composer.json & composer.lock: Define project dependencies and autoloading configurations.
-Dockerfile: Builds the PHP application container, installs dependencies, and generates API documentation.
-docker-compose.yml: Configures and manages Docker services.
-generate-docs.php: Script to generate openapi.json from OpenAPI annotations in the code.
-public/:
-index.php: Entry point for all API requests.
-openapi.json: Generated OpenAPI specification file.
-docs/: Contains Swagger UI assets for interactive API documentation.
-src/:
-Config/: Configuration files.
-Controllers/: Handle HTTP requests and responses.
-Database/: Database connection and management.
-Docs/: OpenAPI annotations and schema definitions.
-Repositories/: Data persistence logic.
-Router/: Routes HTTP requests to appropriate controllers.
-Services/: Business logic.
-tests/: Contains test cases (optional but recommended).
-vendor/: Composer-managed dependencies.
-```
+- **`composer.json` & `composer.lock`**: Define project dependencies and autoloading configurations.
+- **`Dockerfile`**: Builds the PHP application container, installs dependencies, and generates API documentation.
+- **`docker-compose.yml`**: Configures and manages Docker services.
+- **`generate-docs.php`**: Script to generate `openapi.json` from OpenAPI annotations in the code.
+- **`public/`**:
+  - `index.php`: Entry point for all API requests.
+  - `openapi.json`: Generated OpenAPI specification file.
+  - `docs/`: Contains Swagger UI assets for interactive API documentation.
+- **`src/`**:
+  - **`Config/`**: Configuration files.
+  - **`Controllers/`**: Handle HTTP requests and responses.
+  - **`Database/`**: Database connection and management.
+  - **`Docs/`**: OpenAPI annotations and schema definitions.
+  - **`Repositories/`**: Data persistence logic.
+  - **`Router/`**: Routes HTTP requests to appropriate controllers.
+  - **`Services/`**: Business logic.
+- **`tests/`**: Contains test cases (optional but recommended).
+- **`vendor/`**: Composer-managed dependencies.
